@@ -1,0 +1,31 @@
+:root {
+    --navy: #0A1628;
+    --navy-mid: #1E3A5F;
+    --navy-light: #2C4A7A;
+    --accent: #2563EB;
+    --white: #FFFFFF;
+    --off-white: #F7F7F5;
+    --gray-400: #9CA3AF;
+    --gray-600: #4B5563;
+  
+    --font-mono: 'JetBrains Mono', monospace;
+    --font-serif: 'DM Serif Display', serif;
+    --font-sans: 'DM Sans', sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: var(--font-sans);
+    background: var(--off-white);
+    color: var(--navy);
+    overflow-x: hidden;
+  }

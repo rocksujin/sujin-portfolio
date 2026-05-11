@@ -1,0 +1,49 @@
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 4rem;
+    background: rgba(247, 247, 245, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(10, 22, 40, 0.06);
+  }
+  
+  .logo {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: var(--navy);
+    text-decoration: none;
+  }
+  
+  .links {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+  }
+  
+  .links a {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    color: var(--gray-600);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  
+    &:hover {
+      color: var(--navy);
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .nav {
+      padding: 1.25rem 2rem;
+    }
+  }
