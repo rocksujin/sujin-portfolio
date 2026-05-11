@@ -1,11 +1,11 @@
-.hero {
+.cover {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-top: 5rem;
+    padding-top: 4.4rem;
   }
   
-  .heroLeft {
+  .coverLeft {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,7 +13,7 @@
     position: relative;
   }
   
-  .heroLabel {
+  .coverLabel {
     font-family: var(--font-mono);
     font-size: 0.7rem;
     letter-spacing: 0.15em;
@@ -33,7 +33,7 @@
     }
   }
   
-  .heroName {
+  .coverName {
     font-family: var(--font-serif);
     font-size: clamp(3.5rem, 6vw, 5.5rem);
     line-height: 1.05;
@@ -46,7 +46,7 @@
     }
   }
   
-  .heroTitle {
+  .coverTitle {
     font-family: var(--font-mono);
     font-size: 0.85rem;
     letter-spacing: 0.1em;
@@ -55,7 +55,7 @@
     text-transform: uppercase;
   }
   
-  .heroDesc {
+  .coverDesc {
     font-size: 1rem;
     line-height: 1.75;
     color: var(--gray-600);
@@ -69,7 +69,7 @@
     }
   }
   
-  .heroCta {
+  .coverCta {
     display: flex;
     gap: 1rem;
     align-items: center;
@@ -116,7 +116,7 @@
     }
   }
   
-  .heroRight {
+  .coverRight {
     background: var(--navy);
     display: flex;
     flex-direction: column;
@@ -185,7 +185,7 @@
     letter-spacing: 0.05em;
   }
   
-  .heroStats {
+  .coverStats {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     border-top: 1px solid rgba(255, 255, 255, 0.08);
@@ -266,8 +266,8 @@
   }
   
   @media (max-width: 900px) {
-    .hero { grid-template-columns: 1fr; }
-    .heroLeft { padding: 8rem 2rem 4rem; }
-    .heroRight { padding: 4rem 2rem; }
+    .cover { grid-template-columns: 1fr; }
+    .coverLeft { padding: 8rem 2rem 4rem; }
+    .coverRight { padding: 4rem 2rem; }
     .scrollHint { left: 2rem; }
   }

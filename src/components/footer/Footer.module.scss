@@ -1,0 +1,30 @@
+.footer {
+    padding: 2rem 4rem;
+    border-top: 1px solid rgba(10, 22, 40, 0.06);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .left {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    color: var(--gray-400);
+  }
+  
+  .right {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    color: var(--gray-400);
+  }
+  
+  @media (max-width: 900px) {
+    .footer {
+      padding: 2rem;
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
+    }
+  }

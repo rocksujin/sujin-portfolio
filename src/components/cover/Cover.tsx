@@ -10,22 +10,22 @@ const stack = [
   'Figma',
 ]
 
-export default function Hero() {
+export default function Cover() {
   return (
-    <section className={styles.hero}>
-      <div className={styles.heroLeft}>
-        <p className={`${styles.heroLabel} ${styles.fadeUp}`}>
+    <section className={styles.cover}>
+      <div className={styles.coverLeft}>
+        <p className={`${styles.coverLabel} ${styles.fadeUp}`}>
           Available for new opportunities
         </p>
-        <h1 className={`${styles.heroName} ${styles.fadeUp}`}>
+        <h1 className={`${styles.coverName} ${styles.fadeUp}`}>
           Sujin<br /><em>Ryu</em>
         </h1>
-        <p className={`${styles.heroTitle} ${styles.fadeUp}`}>UX Engineer</p>
-        <p className={`${styles.heroDesc} ${styles.fadeUp}`}>
+        <p className={`${styles.coverTitle} ${styles.fadeUp}`}>UX Engineer</p>
+        <p className={`${styles.coverDesc} ${styles.fadeUp}`}>
           Bridging <strong>design and front-end architecture</strong> — building
           scalable, accessible digital products that users actually enjoy.
         </p>
-        <div className={`${styles.heroCta} ${styles.fadeUp}`}>
+        <div className={`${styles.coverCta} ${styles.fadeUp}`}>
           <Link href="/work" className={styles.btnPrimary}>View Work →</Link>
           <Link href="/contact" className={styles.btnSecondary}>Get in Touch</Link>
         </div>
@@ -35,7 +35,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className={styles.heroRight}>
+      <div className={styles.coverRight}>
         <p className={styles.stackLabel}>Tech Stack</p>
         <div className={styles.stackGrid}>
           {stack.map((item) => (
@@ -45,7 +45,7 @@ export default function Hero() {
             </div>
           ))}
         </div>
-        <div className={styles.heroStats}>
+        <div className={styles.coverStats}>
           <div className={styles.stat}>
             <p className={styles.statNum}>6+</p>
             <p className={styles.statLabel}>Years Exp.</p>
