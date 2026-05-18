@@ -5,19 +5,19 @@ const experience = [
     period: 'Aug 2022 — Present',
     company: 'Asurion Korea',
     role: 'UI/UX Engineer',
-    desc: 'Coming soon.',
-  },
+    desc: 'Served as the sole UX Engineer per project, independently leading end-to-end frontend development and UX decision-making in close collaboration with global and local cross-functional teams.',
+},
   {
     period: 'Sep 2021 — Jun 2022',
     company: 'Insutil',
     role: 'UI Developer',
-    desc: 'Coming soon.',
+    desc: 'Led end-to-end UI development for landing pages and critical internal network systems, including on-site deployment support for Incheon Airport. Collaborated directly with designers and mentored a junior designer.',
   },
   {
     period: 'Jun 2019 — Sep 2021',
     company: 'Douzone Bizon',
     role: 'UI Developer',
-    desc: 'Coming soon.',
+    desc: 'Developed responsive, high-performance web interfaces for B2B platforms — including complex streaming and finance modules — with accessibility and SEO best practices applied through semantic HTML and Open Graph markup.',
   },
 ]
 
@@ -55,7 +55,9 @@ export default function About() {
         <p className={styles.label}>About</p>
         <h1 className={styles.title}>Who I Am</h1>
         <p className={styles.intro}>
-          Coming soon.
+            안녕하세요, UI개발자/ UX Engineer 류수진 입니다. <br />
+            기술 스택의 변화에 기민하게 대응하며 성장해 왔으며, 언제나 <strong>확장성, 접근성, 사용성</strong>을 최우선 가치로 두고 작업합니다.<br />
+        UX Engineer working at the intersection of design and front-end architecture. I care about building scalable, maintainable digital products with accessibility at the core — translating UX requirements into clean, purposeful code. Experienced working within global cross-functional teams, and fluent in both Korean and English.
         </p>
       </div>
 
