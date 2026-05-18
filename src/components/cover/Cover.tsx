@@ -22,17 +22,13 @@ export default function Cover() {
         </h1>
         <p className={`${styles.coverTitle} ${styles.fadeUp}`}>UX Engineer</p>
         <p className={`${styles.coverDesc} ${styles.fadeUp}`}>
-          Bridging <strong>design and front-end architecture</strong> — building
-          scalable, accessible digital products that users actually enjoy.
+        I think in systems. I build for people.
         </p>
         <div className={`${styles.coverCta} ${styles.fadeUp}`}>
           <Link href="/work" className={styles.btnPrimary}>View Work →</Link>
           <Link href="/contact" className={styles.btnSecondary}>Get in Touch</Link>
         </div>
-        <div className={styles.scrollHint}>
-          <span className={styles.scrollLine} />
-          Scroll
-        </div>
+        
       </div>
 
       <div className={styles.coverRight}>
