@@ -52,7 +52,6 @@
     letter-spacing: 0.1em;
     color: var(--gray-600);
     margin-bottom: 2.5rem;
-    margin-top: 1rem;
     text-transform: uppercase;
   }
   
@@ -222,6 +221,35 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.35);
+  }
+  .philosophy {
+    font-family: var(--font-serif);
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    color: var(--white);
+    line-height: 1.2;
+    margin-bottom: 3rem;
+  }
+  
+  .highlightList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 3rem;
+  }
+  
+  .highlightItem {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.03);
+    transition: all 0.2s;
+  
+    &:hover {
+      border-color: rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.06);
+    }
   }
   
   .fadeUp {
