@@ -1,4 +1,7 @@
+'use client'
+
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import styles from './Nav.module.scss'
 
 const links = [
@@ -8,13 +11,17 @@ const links = [
 ]
 
 export default function Nav() {
+  const pathname = usePathname()
+
   return (
     <nav className={styles.nav}>
       <Link href="/" className={styles.logo}>SR_</Link>
       <ul className={styles.links}>
         {links.map(({ href, label }) => (
           <li key={href}>
-            <Link href={href}>{label}</Link>
+            <Link href={href}
+            className={pathname.startsWith(href) ? styles.active : ''}
+            >{label}</Link>
           </li>
         ))}
       </ul>

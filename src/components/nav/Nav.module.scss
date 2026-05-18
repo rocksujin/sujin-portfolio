@@ -37,9 +37,10 @@
     text-transform: uppercase;
     transition: color 0.2s;
   
-    &:hover {
-      color: var(--navy);
+    &:hover, &.active {
+      color: var(--accent);
     }
+    
   }
   
   @media (max-width: 900px) {
