@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import { Project } from '@/data/projects'
 import styles from './ProjectCard.module.scss'
@@ -6,9 +7,19 @@ export default function ProjectCard({ project }: { project: Project }) {
   return (
     <Link href={`/work/${project.slug}`} className={styles.card}>
       <div className={styles.thumbnail}>
-        <span className={styles.thumbnailPlaceholder}>
-          {project.slug}
-        </span>
+        {project.thumbnail ? (
+          <Image
+            src={project.thumbnail}
+            alt={`${project.title} mockup`}
+            fill
+            className={styles.thumbnailImage}
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+        ) : (
+          <span className={styles.thumbnailPlaceholder}>
+            {project.slug}
+          </span>
+        )}
       </div>
       <div className={styles.body}>
         <p className={styles.company}>{project.company}</p>

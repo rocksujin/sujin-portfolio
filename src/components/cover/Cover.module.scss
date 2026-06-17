@@ -2,7 +2,7 @@
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-top: 4.4rem;
+    // padding-top: 4.4rem;
   }
   
   .coverLeft {
@@ -38,7 +38,7 @@
     font-size: clamp(3.5rem, 6vw, 5.5rem);
     line-height: 1;
     color: var(--navy);
-    margin-bottom: 0.25rem;
+    margin-bottom: 1rem;
   
     em {
       font-style: italic;

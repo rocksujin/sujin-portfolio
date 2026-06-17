@@ -1,16 +1,17 @@
+import type { ReactNode } from 'react'
 import Link from 'next/link'
 import styles from './Cover.module.scss'
 
 const highlights = [
-  'Accessibility-first development',
-  'Design systems from scratch',
-  'UX decisions without a spec',
+  'Make the invisible visible',
+  'Build interaction patterns before the playbook exists',
+  'Design systems for trust, control, and recovery',
 ]
 
-const stats = [
-  { num: '6+', label: 'Years Exp.' },
-  { num: '20+', label: 'Components' },
-  { num: 'EN/KR', label: 'Bilingual' },
+const stats: { num: ReactNode; label: string }[] = [
+  { num: '7+', label: 'Years Exp.' },
+  { num: <>3&times;</>, label: 'Growth, No Rework' },
+  { num: 'KR/EN', label: 'Bilingual' },
 ]
 
 export default function Cover() {
@@ -34,7 +35,7 @@ export default function Cover() {
       </div>
 
       <div className={styles.coverRight}>
-        <p className={styles.stackLabel}>Philosophy</p>
+        {/* <p className={styles.stackLabel}>Philosophy</p> */}
         <p className={styles.philosophy}>
           I think in systems.<br />I build for people.
         </p>

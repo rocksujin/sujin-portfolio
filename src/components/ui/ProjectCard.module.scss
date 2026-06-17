@@ -24,6 +24,11 @@
     justify-content: center;
   }
   
+  .thumbnailImage {
+    object-fit: cover;
+    object-position: top center;
+  }
+
   .thumbnailPlaceholder {
     font-family: var(--font-mono);
     font-size: 0.7rem;

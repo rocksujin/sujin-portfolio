@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { projects } from '@/data/projects'
 import styles from './page.module.scss'
+import Image from 'next/image'
 
 export function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }))
@@ -42,10 +43,45 @@ export default async function CaseStudy({
         </div>
       </div>
 
+      {(project.githubUrl || project.liveUrl) && (
+          <div className={styles.links}>
+            {project.liveUrl && (
+                <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.linkBtn}
+              >
+                View Live →
+              </a>
+            )}
+            {project.githubUrl && (
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.linkBtnSecondary}
+              >
+                View Code →
+              </a>
+            )}
+          </div>
+        )}
+
       <div className={styles.thumbnail}>
-        <span className={styles.thumbnailPlaceholder}>
-          {project.slug} — mockup coming soon
-        </span>
+      {project.thumbnail ? (
+          <Image
+            src={project.thumbnail}
+            alt={`${project.title} mockup`}
+            fill
+            className={styles.thumbnailImage}
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+        ) : (
+          <span className={styles.thumbnailPlaceholder}>
+            {project.slug}
+          </span>
+        )}
       </div>
 
       <div className={styles.section}>

@@ -97,8 +97,50 @@
     border: 1px solid rgba(10, 22, 40, 0.12);
     padding: 0.25rem 0.625rem;
   }
+
+  .links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .linkBtn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.625rem 1.25rem;
+    background: var(--navy);
+    color: var(--white);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    transition: all 0.2s;
+  
+    &:hover {
+      background: var(--navy-light);
+    }
+  }
+  
+  .linkBtnSecondary {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.625rem 1.25rem;
+    background: transparent;
+    color: var(--navy);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    border: 1px solid rgba(10, 22, 40, 0.2);
+    transition: all 0.2s;
+  
+    &:hover {
+      border-color: var(--navy);
+    }
+  }
   
   .thumbnail {
+    position: relative;
     width: 100%;
     aspect-ratio: 16 / 9;
     background: var(--navy);

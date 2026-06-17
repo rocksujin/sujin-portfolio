@@ -15,7 +15,7 @@ export default function Nav() {
 
   return (
     <nav className={styles.nav}>
-      <Link href="/" className={styles.logo}>SR_</Link>
+      <Link href="/" className={styles.logo}>SR_._</Link>
       <ul className={styles.links}>
         {links.map(({ href, label }) => (
           <li key={href}>
