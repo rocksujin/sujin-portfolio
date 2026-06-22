@@ -5,22 +5,22 @@ const experience = [
     period: 'Aug 2022 — Present',
     company: 'Asurion Korea',
     role: 'UI/UX Engineer',
-    desc: '프로젝트별 유일한 UX 엔지니어로서, 전역 및 국내 크로스 기능 팀과 긴밀히 협력하며 종단간 프론트엔드 개발과 UX 결정을 주도했습니다.',
-    desc2: 'Served as the sole UX Engineer per project, independently leading end-to-end frontend development and UX decision-making in close collaboration with global and local cross-functional teams.',
+ //   desc: '미국 기업이지만 입사 이후 한국 지사가 상당 부분 독립적으로 운영되면서, 해외 직원들과의 협업 빈도는 많지 않았습니다. UX팀 소속이지만 실제로는 배포와 검증 단계에서 프론트엔드 팀과 더 긴밀하게 협업하는 포지션이었어요. 요청사항은 비즈니스팀과 PO, 시각적인 부분은 디자이너, 소스와 배포는 개발자, 검증은 QA팀과 소통하며 다양한 플랫폼을 만들고 개선했습니다.',
+    desc2: 'Although Asurion is a US-based company, the Korea office operated fairly independently after I joined, so direct collaboration with overseas teams was limited. While I was on the UX team, I worked most closely with the frontend team during deployment and QA. I coordinated with business stakeholders and POs on requirements, designers on visual direction, developers on implementation and release, and QA on validation — building and improving multiple platforms through that process.',
 },
   {
     period: 'Sep 2021 — Jun 2022',
     company: 'Insutil',
     role: 'UI Developer',
-    desc: '인천공항 온사이트 배포 지원을 포함한 랜딩 페이지와 중요한 내부 네트워크 시스템의 종단간 UI 개발을 주도했습니다. 디자이너와 직접 협력하며 주니어 디자이너를 지도했습니다.',
-    desc2: 'Led end-to-end UI development for landing pages and critical internal network systems, including on-site deployment support for Incheon Airport. Collaborated directly with designers and mentored a junior designer.',
+  //  desc: 'AI 딥러닝 기반 언어 분석 솔루션을 구축하려던 스타트업이었고, SI 사업으로 인천공항 내부망 작업도 함께 진행했습니다. 설계 파트가 따로 없어서, 사내 솔루션 홍보를 위한 랜딩페이지 제작과 솔루션 테스트에 주니어 디자이너와 함께 참여했습니다. 인천공항 작업 때는 개발자들과 함께 출장을 가서 외부 직원들과도 협력했습니다.',
+    desc2: 'Insutil was a startup building a deep learning-based language analysis and AI solution, while also delivering custom IT infrastructure projects for clients, including Incheon Airport\'s internal network systems. With no dedicated design team, I worked alongside a junior designer on landing pages and product testing for the in-house solution. For the airport project, I also traveled on-site with developers to collaborate directly with external staff.',
   },
   {
     period: 'Jun 2019 — Sep 2021',
     company: 'Douzone Bizon',
     role: 'UI Developer',
-    desc: 'B2B 플랫폼을 위한 반응형, 고성능 웹 인터페이스 개발을 주도했습니다. 접근성과 SEO 최적화를 위해 시멘틱 HTML과 Open Graph 마크업을 적용했습니다.',
-    desc2: 'Developed responsive, high-performance web interfaces for B2B platforms — including complex streaming and finance modules — with accessibility and SEO best practices applied through semantic HTML and Open Graph markup.',
+   // desc: 'ERP, 기업용 솔루션 등을 개발하는 B2B 기업에서 UI 개발자로 첫발을 내디뎠습니다. 기업용 솔루션 본부에 소속되어 채팅, 스트리밍, 보험관리, 회계, 일정관리, 영상통화, 랜딩페이지 등 다양한 분야의 화면을 작업했습니다. 접근성에 대해서도 많이 배웠고, 영어로 된 기술 문서를 팀원들을 위해 번역하는 일도 맡았습니다.',
+    desc2: 'I started my career as a UI developer at a B2B company building ERP and enterprise solutions. Within the enterprise solutions division, I worked across a wide range of domains — chat, streaming, insurance management, accounting, scheduling, video calls, and landing pages. This is also where I learned the fundamentals of accessibility, and I took on translating English-language technical documentation for the team.',
   },
 ]
 
@@ -39,7 +39,7 @@ const skills = [
   },
   {
     label: 'Tools',
-    items: ['Git', 'Cursor AI', 'Jira', 'Notion'],
+    items: ['Git', 'Cursor AI', 'Claude Code','Jira', 'Notion'],
   },
   {
     label: 'Framework',
@@ -47,7 +47,7 @@ const skills = [
   },
   {
     label: 'Languages',
-    items: ['English', 'Korean'],
+    items: ['Korean','English' ],
   },
 ]
 
@@ -74,8 +74,8 @@ export default function About() {
               </div>
               <div className={styles.timelineBody}>
                 <h2 className={styles.timelineRole}>{item.role}</h2>
-                <p className={styles.timelineDesc}>- {item.desc}</p>
-                <p className={styles.timelineDesc}>- {item.desc2}</p>
+                {/* <p className={styles.timelineDesc}>- {item.desc}</p> */}
+                <p className={styles.timelineDesc}>{item.desc2}</p>
               </div>
             </div>
           ))}

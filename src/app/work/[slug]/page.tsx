@@ -86,7 +86,7 @@ export default async function CaseStudy({
 
       <div className={styles.section}>
         <p className={styles.sectionLabel}>01 — Context</p>
-        <h2 className={styles.sectionTitle}>Background</h2>
+        <h2 className={styles.sectionTitle}>Summary</h2>
         <p className={styles.sectionBody}>{project.summary || 'Coming soon.'}</p>
       </div>
 
@@ -112,7 +112,7 @@ export default async function CaseStudy({
       <div className={styles.section}>
         <p className={styles.sectionLabel}>04 — Outcome</p>
         <h2 className={styles.sectionTitle}>Result</h2>
-        <p className={styles.sectionBody}>{project.problem || 'Coming soon.'}</p>
+        <p className={styles.sectionBody}>{project.result || 'Coming soon.'}</p>
       </div>
     </main>
   )
