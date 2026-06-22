@@ -58,9 +58,8 @@ export default function About() {
         <p className={styles.label}>About</p>
         <h1 className={styles.title}>Who I Am</h1>
         <p className={styles.intro}>
-            안녕하세요, UI개발자/ UX Engineer 류수진 입니다.
-            기술 스택의 변화에 기민하게 대응하며 성장해 왔으며, 항상 <strong>확장성, 접근성, 사용성</strong>을 최우선 가치로 두고 작업합니다.<br />
-        UX Engineer working at the intersection of design and front-end architecture. I care about building scalable, maintainable digital products with accessibility at the core — translating UX requirements into clean, purposeful code. Experienced working within global cross-functional teams, and fluent in both Korean and English.
+        {/* 디자인과 프론트엔드 엔지니어링의 경계에서 일하는 UX Engineer입니다. 배포 직전까지도 계속 바뀌는 요구사항을 정제된 구조로 만들어가며, 다양한 팀과 협업하는 프로젝트에서 단독 UX Engineer로서 프로덕션 수준의 인터페이스를 구현해왔습니다. 보이지 않는 문제를 보이게 만들고, 정해진 가이드가 없는 영역에서 새로운 방식을 설계하는 것에 관심이 있습니다. 특히 접근성 중심의 개발과, 사람들이 복잡한 시스템을 실제로 어떻게 이해하고 탐색하는지에 집중하고 있습니다. */}
+        UX Engineer working at the intersection of design and frontend engineering — taking iterative requirements and shaping them into clean, production-ready interfaces, often as the sole UX Engineer on cross-functional projects. I care about making invisible problems visible and designing for moments no playbook covers yet. Particularly focused on accessibility-first development and how people actually understand complex systems.
         </p>
       </div>
 

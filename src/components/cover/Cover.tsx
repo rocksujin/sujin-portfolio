@@ -4,13 +4,13 @@ import styles from './Cover.module.scss'
 
 const highlights = [
   'Make the invisible visible',
-  'Build interaction patterns before the playbook exists',
-  'Design systems for trust, control, and recovery',
+  'Design for moments no playbook covers yet',
+  'Turn uncertainty into something people can act on',
 ]
 
 const stats: { num: ReactNode; label: string }[] = [
   { num: '7+', label: 'Years Exp.' },
-  { num: <>3&times;</>, label: 'Growth, No Rework' },
+  { num: <>3&times;</>, label: 'Scope, 0 Rework' },
   { num: 'KR/EN', label: 'Bilingual' },
 ]
 
@@ -37,7 +37,7 @@ export default function Cover() {
       <div className={styles.coverRight}>
         {/* <p className={styles.stackLabel}>Philosophy</p> */}
         <p className={styles.philosophy}>
-          I think in systems.<br />I build for people.
+          I think in systems,<br />I build for people.
         </p>
 
         <div className={styles.highlightList}>
