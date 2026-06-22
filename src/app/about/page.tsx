@@ -1,6 +1,12 @@
+import type { ReactNode } from 'react'
 import styles from './about.module.scss'
 
-const experience = [
+const experience: {
+  period: string
+  company: string
+  role: string
+  desc2: ReactNode
+}[] = [
   {
     period: 'Aug 2022 — Present',
     company: 'Asurion Korea',
@@ -20,7 +26,19 @@ const experience = [
     company: 'Douzone Bizon',
     role: 'UI Developer',
    // desc: 'ERP, 기업용 솔루션 등을 개발하는 B2B 기업에서 UI 개발자로 첫발을 내디뎠습니다. 기업용 솔루션 본부에 소속되어 채팅, 스트리밍, 보험관리, 회계, 일정관리, 영상통화, 랜딩페이지 등 다양한 분야의 화면을 작업했습니다. 접근성에 대해서도 많이 배웠고, 영어로 된 기술 문서를 팀원들을 위해 번역하는 일도 맡았습니다.',
-    desc2: 'I started my career as a UI developer at a B2B company building ERP and enterprise solutions. Within the enterprise solutions division, I worked across a wide range of domains — chat, streaming, insurance management, accounting, scheduling, video calls, and landing pages. This is also where I learned the fundamentals of accessibility, and I took on translating English-language technical documentation for the team.',
+    desc2: (
+      <>
+        I started my career as a UI developer at a B2B company building ERP and enterprise solutions. Within the enterprise solutions division, I worked across a wide range of domains — chat, streaming, insurance management, accounting, scheduling, video calls, and{' '}
+        <a
+          href="https://www.wehago.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.inlineLink}
+        >
+         landing pages
+        </a>. This is also where I learned the fundamentals of accessibility, and I took on translating English-language technical documentation for the team.
+      </>
+    ),
   },
 ]
 

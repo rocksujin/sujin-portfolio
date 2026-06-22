@@ -21,7 +21,7 @@ export type Project = {
       company: 'Asurion Korea',
       period: 'Jan 2026 - Present',
       thumbnail: '/images/mockup_crm.png',
-      stack: ['Next.js(App Router)', 'TypeScript', 'Styled-Components', 'SCSS'],
+      stack: ['TypeScript', 'Styled-Components', 'SCSS'],
       summary: 'This project started with a harder task than writing code — convincing the team to strip out MUI entirely and rebuild from scratch. Internal tooling meant no one felt urgency to improve it. I made the case for maintainability and future scalability, and the component system I built is now scoped for expansion into a larger platform ecosystem.',
       problem: 'The team had moved fast with MUI under deadline pressure, but customizing it to match the design had become a significant burden. Developers saw no urgency — it was internal tooling. Designers wanted their specs matched. Bridging that gap was the first challenge. Design specs were incomplete and development ran ahead of design, meaning I had to independently define folder structure, layout, and component architecture from the ground up.',
       highlights: [
@@ -110,3 +110,4 @@ export type Project = {
       liveUrl: 'https://rocksujin.github.io/accessibility-project/',
     },
   ]
+

@@ -129,6 +129,18 @@
     color: var(--gray-600);
     font-weight: 300;
   }
+
+  .inlineLink {
+    color: var(--navy-light);
+    text-decoration: underline;
+    text-decoration-color: var(--navy-light);
+    text-underline-offset: 0.15em;
+    transition: text-decoration-color 0.2s;
+
+    &:hover {
+      text-decoration-color: var(--accent);
+    }
+  }
   
   /* SKILLS */
   .skillsGrid {
