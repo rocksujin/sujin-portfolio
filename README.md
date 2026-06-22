@@ -13,11 +13,13 @@ Personal portfolio site built with Next.js, showcasing UX engineering work acros
 
 ## Structure
 
+```
 src/
 ├── app/          Routes (/, /about, /work, /work/[slug], /contact)
 ├── components/   Cover, Nav, Footer, ProjectCard
 ├── data/         Project content (case studies)
 └── styles/       Global SCSS variables
+```
 
 ## Features
 
@@ -27,8 +29,10 @@ src/
 
 ## Run Locally
 
+```
 npm install
 npm run dev
+```
 
 ---
 
